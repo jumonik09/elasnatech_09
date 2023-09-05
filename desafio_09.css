@@ -1,0 +1,132 @@
+body{
+    background-color: #610200;
+    font-family: Arial, Helvetica, sans-serif;
+    color:cornsilk;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.faixa_superior{
+    border-bottom: 2px solid;
+    background-color: #f58787; 
+    position: absolute;
+	top: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    right: 0px;
+}    
+
+.rodape {
+	position: relative;
+	bottom: 0;
+    left: 0;
+    background-color:#f58787 ;
+    width: 100%;
+    height: 40px ;
+    font-size: medium;
+    font-family: 'Times New Roman', 'Times, serif';
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2F0F0;
+    text-shadow:#df0909; 
+}
+
+
+.linha_final {
+    background-color: #F2F0F0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+
+
+
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 0px; /*padding é responsável por definir uma distância interna entre um elemento e sua borda*/
+    text-transform: uppercase;
+    width: 90%;
+    margin: 100px auto 0;
+    /*font-size: 66px;*/
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0;
+    font-size: clamp(1.75em, 1em +3vw,2.5em);
+    
+    
+}
+
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin:auto;
+    justify-content: space-evenly;
+    gap: 2%;
+    flex-basis: 250px;
+   
+}
+
+.imagem01{
+    background-color:#f58787;
+    color: aqua;
+    padding: 8px;
+    width: 90%;
+   
+    
+    
+   
+}
+
+.imagem01:hover {
+    filter:sepia(100%)
+}
+
+
+
+.title_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.elas_01{
+    background-color: black;
+    font-size: 18px;
+    padding: 8px;
+    text-align:center;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+}
+
+.elas_01:hover{
+    filter: contrast(100%);
+}
+
+.children{
+    display: inline-block;
+   width: 30%;
+}
+
+@media (max-width: 800px) {
+    .father { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .children {
+        width: 80%;
+    }
+}
+
+
